@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-f$tkpmjpnkp-bw*t)6^qm3kf3mu(iqc@#%==na+c=rvbzpbz#b"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["192.168.1.2", "192.168.163.41"]
 
 
 # Application definition
@@ -125,7 +125,7 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:3001", "http://192.168.1.2"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:3001", "http://192.168.1.2", "192.168.163.41"]
 CORS_ALLOW_METHODS = ("GET", "POST", "PUT", "DELETE", "OPTIONS")
 
 CORS_ALLOW_HEADERS = ("Content-Type",)
